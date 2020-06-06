@@ -11,13 +11,15 @@
  *
  * @author GOF
  */
+include_once '../classes/';
+include_once '../classes/Admin.php';
 include_once '../classes/Admin.php';
 include_once '../classes/User_parent.php';
 include_once '../Database/Customer_Queries.php';
 include_once '../classes/Connections.php';
 include_once '../classes/complaint.php';
 //include_once '../classes/employee.php';
-class Customer extends User_parent  {
+class Customer extends User_parent, implement customer_inter  {
     private $observer_state;   
     private $customer_query;
     private $email;
@@ -28,7 +30,7 @@ class Customer extends User_parent  {
    }
     
     
-  
+ 
     
   
    function getComplaint_header() {
