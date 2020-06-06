@@ -36,7 +36,7 @@ class employee extends User_parent {
         return $data;        
     }
     
-    public function notify_customers($id,$state)
+    public function Solvecomplaint($id,$state)
     {
         $data = array();    
         $data = $this->employee_query->solve_complaint($id,$state);
