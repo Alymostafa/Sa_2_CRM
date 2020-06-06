@@ -19,7 +19,7 @@ include_once '../Database/Customer_Queries.php';
 include_once '../classes/Connections.php';
 include_once '../classes/complaint.php';
 //include_once '../classes/employee.php';
-class Customer extends User_parent implement customer_inter  {
+class Customer extends User_parent implements customer_inter  {
     private $observer_state;   
     private $customer_query;
     private $email;
