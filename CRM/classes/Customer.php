@@ -15,20 +15,26 @@ include_once '../classes/Admin.php';
 include_once '../classes/User_parent.php';
 include_once '../Database/Customer_Queries.php';
 include_once '../classes/Connections.php';
+include_once '../classes/complaint.php';
 //include_once '../classes/employee.php';
 class Customer extends User_parent  {
-    private $complaint;
-    private $complaint_state;   
+    private $observer_state;   
     private $customer_query;
     private $email;
     private $complaint_header;
+    employee = employee_
     public function __construct() {
        $this->customer_query = new Customer_Queries(); 
    }
     
-   function getComplaint_state() {
-       return $this->complaint_state;
+    
+   public function update(){
+   
+       $this->$observer_state = employee.getstate();
+
    }
+    
+  
    function getComplaint_header() {
        return $this->complaint_header;
    }
@@ -37,20 +43,6 @@ class Customer extends User_parent  {
        $this->complaint_header = $complaint_header;
    }
 
-   function setComplaint_state($complaint_state) {
-       $this->complaint_state = $complaint_state;
-   }
-
-       
-    function setcomplaint($complaint)
-    {
-        $this->complaint = $complaint;
-    }
-    
-    function getcomplaint()
-    {
-        return $this->complaint;
-    }
     
     
     
