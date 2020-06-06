@@ -22,7 +22,7 @@ class Customer extends User_parent  {
     private $customer_query;
     private $email;
     private $complaint_header;
-    employee = employee_
+    $employee = new employee;
     public function __construct() {
        $this->customer_query = new Customer_Queries(); 
    }
