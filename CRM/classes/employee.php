@@ -17,6 +17,7 @@ class employee extends User_parent {
     
     private $employee_query;
     private $solution;
+    private $complaint_state
     
     function getSolution() {
         return $this->solution;
