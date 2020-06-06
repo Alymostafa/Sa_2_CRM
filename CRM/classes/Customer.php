@@ -28,11 +28,7 @@ class Customer extends User_parent  {
    }
     
     
-   public function update(){
-   
-       $this->$observer_state = employee.getstate();
-
-   }
+  
     
   
    function getComplaint_header() {
